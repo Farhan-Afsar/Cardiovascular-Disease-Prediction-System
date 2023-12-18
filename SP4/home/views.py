@@ -26,19 +26,19 @@ def result(request):
     KN = KNeighborsClassifier()
     KN.fit(xtrain, ytrain)
 
-    intput1 = int(request.GET.get('age'))
-    intput2 = int(request.GET.get('gender'))
-    intput3 = int(request.GET.get('height'))
-    intput4 = float(request.GET.get('weight'))
-    intput5 = int(request.GET.get('ap_hi'))
-    intput6 = int(request.GET.get('ap_lo'))
-    intput7 = int(request.GET.get('cholesterol'))
-    intput8 = int(request.GET.get('glucose'))
-    intput9 = int(request.GET.get('smoke'))
-    intput10 = int(request.GET.get('alco'))
-    intput11 = int(request.GET.get('active'))
+    input1 = int(request.GET.get('age'))
+    input2 = int(request.GET.get('gender'))
+    input3 = int(request.GET.get('height'))
+    input4 = float(request.GET.get('weight'))
+    input5 = int(request.GET.get('ap_hi'))
+    input6 = int(request.GET.get('ap_lo'))
+    input7 = int(request.GET.get('cholesterol'))
+    input8 = int(request.GET.get('glucose'))
+    input9 = int(request.GET.get('smoke'))
+    input10 = int(request.GET.get('alco'))
+    input11 = int(request.GET.get('active'))
 
-    pred = KN.predict([[intput1, intput2, intput3, intput4, intput5, intput6, intput7, intput8, intput9, intput10, intput11]])
+    pred = KN.predict([[input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11]])
 
     result1 = " "
 
